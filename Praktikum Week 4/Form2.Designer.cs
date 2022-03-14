@@ -103,7 +103,7 @@ namespace Praktikum_Week_4
             this.TBoxNamaTampilan.Name = "TBoxNamaTampilan";
             this.TBoxNamaTampilan.Size = new System.Drawing.Size(429, 27);
             this.TBoxNamaTampilan.TabIndex = 6;
-            this.TBoxNamaTampilan.TextChanged += new System.EventHandler(this.TBoxNamaTampilan_TextChanged);
+
             // 
             // TBoxAlamatTampilan
             // 

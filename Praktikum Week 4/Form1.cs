@@ -44,7 +44,7 @@ namespace Praktikum_Week_4
             }
             else if (TBoxNoHp.Text.All(char.IsLetter))
             {
-                MessageBox.Show("No Hp Harus Angka", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Data Harus Lengkap dan No Hp Harus Angka", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
