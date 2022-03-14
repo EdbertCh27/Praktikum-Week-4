@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Praktikum_Week_4
 {
-    public partial class Form1 : Form
+    public partial class FormTambahData : Form
     {
-        public Form1()
+        public FormTambahData()
         {
             InitializeComponent();
         }
@@ -21,7 +21,7 @@ namespace Praktikum_Week_4
         public void BtnLihatData_Click(object sender, EventArgs e)
         {
 
-            Form2 bukaForm2 = new Form2(dataOrang);
+            FormShowData bukaForm2 = new FormShowData(dataOrang);
             bukaForm2.Show();
             this.Hide();
         }
@@ -38,7 +38,11 @@ namespace Praktikum_Week_4
 
         public void BtnSimpan_Click(object sender, EventArgs e)
         {
-            if(TBoxNoHp.Text.All(char.IsLetter))
+            if (dataOrang.Rows.Count >= 10)
+            {
+                MessageBox.Show("Data Sudah Penuh", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else if (TBoxNoHp.Text.All(char.IsLetter))
             {
                 MessageBox.Show("No Hp Harus Angka", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -48,13 +52,8 @@ namespace Praktikum_Week_4
                 TBoxNama.Clear();
                 TBoxAlamat.Clear();
                 TBoxNoHp.Clear();
-
             }
 
-            if (dataOrang.Rows.Count > 10)
-            {
-                MessageBox.Show("Data Sudah Penuh", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
 
         }
 

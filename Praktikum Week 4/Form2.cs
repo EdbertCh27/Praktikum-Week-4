@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace Praktikum_Week_4
 {
-    public partial class Form2 : Form
+    public partial class FormShowData : Form
     {
         DataTable dataOrang = new DataTable();
-        public Form2(DataTable table)
+        public FormShowData(DataTable table)
         {
             InitializeComponent();
             dataOrang = table;
@@ -21,15 +21,11 @@ namespace Praktikum_Week_4
        
         private void BtnKembali_Click(object sender, EventArgs e)
         {
-            Form1 bukaForm1 = new Form1();
+            FormTambahData bukaForm1 = new FormTambahData();
             bukaForm1.Show();
             this.Hide();
         }
 
-        private void TBoxNamaTampilan_TextChanged(object sender, EventArgs e)
-        {
-
-        }
 
         public void Form2_Load(object sender, EventArgs e)
         {

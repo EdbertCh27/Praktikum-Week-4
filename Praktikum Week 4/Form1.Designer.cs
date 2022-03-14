@@ -1,7 +1,7 @@
 ﻿
 namespace Praktikum_Week_4
 {
-    partial class Form1
+    partial class FormTambahData
     {
         /// <summary>
         ///  Required designer variable.
@@ -107,7 +107,7 @@ namespace Praktikum_Week_4
             this.TBoxNoHp.Size = new System.Drawing.Size(406, 27);
             this.TBoxNoHp.TabIndex = 7;
             // 
-            // Form1
+            // FormTambahData
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -120,7 +120,7 @@ namespace Praktikum_Week_4
             this.Controls.Add(this.LblNoHp);
             this.Controls.Add(this.LblAlamat);
             this.Controls.Add(this.LblNama);
-            this.Name = "Form1";
+            this.Name = "FormTambahData";
             this.Text = "Form Penambahan Data";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);

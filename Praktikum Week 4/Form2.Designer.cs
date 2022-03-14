@@ -1,7 +1,7 @@
 ﻿
 namespace Praktikum_Week_4
 {
-    partial class Form2
+    partial class FormShowData
     {
         /// <summary>
         /// Required designer variable.
@@ -119,7 +119,7 @@ namespace Praktikum_Week_4
             this.TBoxNoHpTampilan.Size = new System.Drawing.Size(429, 27);
             this.TBoxNoHpTampilan.TabIndex = 8;
             // 
-            // Form2
+            // FormShowData
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -133,7 +133,7 @@ namespace Praktikum_Week_4
             this.Controls.Add(this.LblTelpTampilan);
             this.Controls.Add(this.LblAlamatTampilan);
             this.Controls.Add(this.LblNamaTampilan);
-            this.Name = "Form2";
+            this.Name = "FormShowData";
             this.Text = "Form Tampilan Data";
             this.Load += new System.EventHandler(this.Form2_Load);
             this.ResumeLayout(false);
